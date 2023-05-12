@@ -4,6 +4,7 @@
     --light: #FFFFFF;
     --light-green: #D1FF5D;
     --dark: #0D2228;
+    --deep-dark: #07161B;
 }
 /* BASE CONFIGS */
 * {
@@ -86,7 +87,7 @@ body {
 }
 /* HEADER */
 
-/* HERO */
+/* HERO SECTION */
 .hero {
     padding: 102px 0 171px;
     height: calc(100vh - 104px);
@@ -160,9 +161,9 @@ body {
     line-height: 36px;
     color: var(--light);
 }
-/* HERO */
+/* HERO SECTION */
 
-/* ABOUT */
+/* ABOUT SECTION */
 .about {
     padding: 103px 0 130px;
     background: var(--dark);
@@ -319,4 +320,84 @@ body {
     line-height: 30px;
     color: var(--light);
 }
-/* ABOUT */
+/* ABOUT SECTION */
+
+/* WHY SECTION */
+.why {
+    padding: 107px 0 178px;
+    background: var(--deep-dark);
+}
+.why__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 130px;
+    line-height: 118px;
+    text-transform: uppercase;
+    color: var(--light-green);
+    margin-bottom: 127px;
+}
+.why__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 69px;
+    padding-left: 29px;
+    padding-bottom: 26px;
+}
+.why__card {
+    position: relative;
+    padding: 26px;
+    width: 419px;
+    height: 505px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10.1395px);
+    border-radius: 15.1075px;
+}
+.why__card::before {
+    content: "";
+    position: absolute;
+    width: 427px;
+    height: 430px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10.1395px);
+    border-radius: 15.1075px;
+    left: -29px;
+    bottom: -26px;
+    z-index: -1;
+}
+.why__card-icon {
+    margin-bottom: 24px;
+}
+.why__card-content {
+    padding-left: 22px;
+}
+.why__card-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--light);
+    margin-bottom: 23px;
+}
+.why__card-desc {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--light);
+    margin-bottom: 37px;
+}
+.why__card-btn {
+    width: 208px;
+    height: 50px;
+    border: 2.04px solid var(--light-green);
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--light);
+}
+/* WHY SECTION */
