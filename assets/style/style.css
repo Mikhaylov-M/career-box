@@ -421,6 +421,7 @@ body {
     left: 0;
 }
 .countries__title {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -429,6 +430,17 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--dark-green);
+}
+.countries__title::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 0;
+    border: 3px solid var(--dark-green);
+    left: -355px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 .countries__content {
     padding: 33px 0 0 72px;
