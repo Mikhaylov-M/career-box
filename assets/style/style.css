@@ -453,3 +453,46 @@ body {
     color: var(--dark-green);
 }
 /* COUNTRIES SECTION */
+
+/* PARTNERS SECTION */
+.partners {
+    position: relative;
+    padding: 113px 0 148px;
+    background: radial-gradient(100.28% 100.28% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.partners__content {
+    padding: 46px 0 106px;
+    align-items: center;
+    margin: auto;
+    width: 1225px;
+    height: 460px;
+    border-radius: 10px;
+    background: linear-gradient(98.14deg, rgba(255, 255, 255, 0.31) 5.19%, rgba(252, 252, 252, 0.21) 46.36%, rgba(248, 248, 248, 0.15) 93.43%);
+}
+.partners__title {
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 118px;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 86px;
+}
+.partners__title::before {
+    content: "";
+    position: absolute;
+    width: 859px;
+    height: 0;
+    border: 1px solid var(--light);
+    margin: auto;
+    bottom: -4px;
+}
+.partners__companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 70px;
+}
+/* PARTNERS SECTION */
