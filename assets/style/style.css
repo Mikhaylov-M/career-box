@@ -50,7 +50,7 @@ body {
     height: 100%;
 }
 .header__logo {
-    flex-grow: 1;
+    margin-right: auto;
 }
 .header__link {
     position: relative;
