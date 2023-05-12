@@ -3,6 +3,7 @@
 :root {
     --light: #FFFFFF;
     --light-green: #D1FF5D;
+    --dark-green: #05664F;
     --dark: #0D2228;
     --deep-dark: #07161B;
 }
@@ -324,8 +325,14 @@ body {
 
 /* WHY SECTION */
 .why {
+    position: relative;
     padding: 107px 0 178px;
     background: var(--deep-dark);
+}
+.why__title-img {
+    position: absolute;
+    top: 20px;
+    left: 0;
 }
 .why__title {
     font-family: 'Montserrat', sans-serif;
@@ -401,3 +408,48 @@ body {
     color: var(--light);
 }
 /* WHY SECTION */
+
+/* COUNTRIES SECTION */
+.countries {
+    position: relative;
+    padding-top: 64px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #DFFFF7 100%);
+}
+.countries__title-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.countries__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 118px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dark-green);
+}
+.countries__content {
+    padding: 33px 0 0 72px;
+    position: absolute;
+    top: 459px;
+    left: 45px;
+    width: 711px;
+    height: 207px;
+    background: var(--light);
+    box-shadow: 0px 20px 30px -16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 53px;
+}
+.countries__item {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--dark-green);
+}
+/* COUNTRIES SECTION */
