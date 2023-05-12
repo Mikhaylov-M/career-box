@@ -60,6 +60,10 @@ body {
     line-height: 27px;
     color: var(--light);
     margin-right: 40px;
+    transition: .3s;
+}
+.header__link:hover {
+    color: var(--light-green);
 }
 .header__link:last-child {
     margin-right: 20px;
@@ -85,6 +89,11 @@ body {
     font-size: 20px;
     line-height: 30px;
     color: var(--light);
+}
+.header__button:hover {
+    background: var(--light-green);
+    color: var(--dark);
+    transition: .3s;
 }
 /* HEADER */
 
@@ -114,7 +123,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     margin-bottom: 41px;
 }
 .hero__title::before {
@@ -166,7 +174,8 @@ body {
 
 /* ABOUT SECTION */
 .about {
-    padding: 103px 0 130px;
+    position: relative;
+    padding: 103px 0 0;
     background: var(--dark);
 }
 .about__up {
@@ -208,6 +217,13 @@ body {
 .about__desk:last-child::before {
     display: none;
 }
+.about__right {
+    position: relative;
+}
+.about__right svg {
+    position: absolute;
+    top: 0;
+}
 .about__card {
     padding: 14px;
     width: 531px;
@@ -229,16 +245,29 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/* ABOUT SECTION */
+
+/* ABOUT2 SECTION */
+.about2 {
+    position: relative;
+    padding: 0 0 130px;
+    background: var(--dark);
+}
 .about__bottom {
-    padding: 155px 0 0;
     display: flex;
     justify-content: start;
     column-gap: 60px;
 }
+.about__bottom > svg {
+    position: absolute;
+    top: -322px;
+}
 .about__title-small {
-    position: relative;
+    margin-top: 150px;
+    position: absolute;
     left: 0;
-    padding: 29px;
+    padding: 29px 29px 29px 173px;
     width: 611px;
     height: 242px;
     background: rgba(255, 255, 255, 0.06);
@@ -254,6 +283,8 @@ body {
     color: var(--light);
 }
 .about__bottom-content {
+    margin-left: 40%;
+    max-width: 900px;
     display: flex;
     justify-content: start;
     column-gap: 35px;
@@ -321,7 +352,7 @@ body {
     line-height: 30px;
     color: var(--light);
 }
-/* ABOUT SECTION */
+/* ABOUT2 SECTION */
 
 /* WHY SECTION */
 .why {
@@ -407,6 +438,11 @@ body {
     line-height: 30px;
     color: var(--light);
 }
+.why__card-btn:hover {
+    background: var(--light-green);
+    color: var(--dark);
+    transition: 0.3s;
+}
 /* WHY SECTION */
 
 /* COUNTRIES SECTION */
@@ -443,14 +479,14 @@ body {
     margin: auto;
 }
 .countries__content {
-    padding: 33px 0 0 72px;
+    padding: 33px 0 32px 72px;
     position: absolute;
     top: 459px;
     left: 45px;
     width: 711px;
     height: 207px;
     background: var(--light);
-    box-shadow: 0px 20px 30px -16px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 30px -16px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -506,6 +542,10 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 70px;
+}
+.partners__logo {
+    display: flex;
+    align-items: center;
 }
 /* PARTNERS SECTION */
 
@@ -565,6 +605,24 @@ body {
     align-items: center;
     column-gap: 21px;
     margin-bottom: 27px;
+}
+.contact__icon-phone {
+    display: block;
+    width: 49px;
+    height: 49px;
+    background: url("../images/phone-1.png") no-repeat, center/cover;
+}
+.contact__icon-phone:hover {
+    background: url("../images/phone-2.png") no-repeat, center/cover;
+}
+.contact__icon-mail {
+    display: block;
+    width: 49px;
+    height: 49px;
+    background: url("../images/mail-1.png") no-repeat, center/cover;
+}
+.contact__icon-mail:hover {
+    background: url("../images/mail-2.png") no-repeat, center/cover;
 }
 .footer__contact-desc {
     font-family: 'Poppins', sans-serif;
