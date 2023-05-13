@@ -466,6 +466,7 @@ body {
     position: relative;
     padding-top: 64px;
     background: linear-gradient(180deg, #FFFFFF 0%, #DFFFF7 100%);
+    z-index: 10;
 }
 .countries__title-img {
     position: absolute;
@@ -524,7 +525,21 @@ body {
     padding: 113px 0 148px;
     background: radial-gradient(100.28% 100.28% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
+.partners__svg-1 {
+    position: absolute;
+    top: -410px;
+    right: 0;
+    z-index: 5;
+}
+.partners__svg-2 {
+    position: absolute;
+    bottom: -422px;
+    left: 0;
+    z-index: 5;
+}
 .partners__content {
+    position: relative;
+    z-index: 11;
     padding: 46px 0 106px;
     align-items: center;
     margin: auto;
@@ -567,8 +582,10 @@ body {
 
 /* FOOTER */
 .footer {
+    position: relative;
     padding: 91px 0 135px;
     background: #07161B;
+    z-index: 10;
 }
 .footer .container {
     display: flex;
@@ -655,6 +672,9 @@ body {
     font-size: 24px;
     line-height: 36px;
     color: var(--light);
+}
+.footer__social {
+    display: flex;
 }
 .social__link {
     margin-right: 30px;
