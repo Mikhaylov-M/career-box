@@ -269,22 +269,17 @@ body {
 /* ABOUT SECTION */
 
 /* ABOUT2 SECTION */
-.about2 {
+.about-2 {
     position: relative;
     padding: 0 0 130px;
     background: var(--dark);
     border-bottom: 5px solid rgba(255, 255, 255, 0.15);
 }
-.about__bottom {
-    display: flex;
-    justify-content: start;
-    column-gap: 60px;
-}
-.about__bottom > svg {
+.about-2__container > svg {
     position: absolute;
     top: -322px;
 }
-.about__title-small {
+.about-2__title {
     margin-top: 150px;
     position: absolute;
     left: 0;
@@ -295,7 +290,7 @@ body {
     backdrop-filter: blur(10.1395px);
     border-radius: 10px;
 }
-.about__title-small-text {
+.about-2__desc {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -303,21 +298,21 @@ body {
     line-height: 60px;
     color: var(--light);
 }
-.about__bottom-content {
+.about-2__content {
     margin-left: 40%;
     max-width: 900px;
     display: flex;
     justify-content: start;
     column-gap: 35px;
 }
-.about__bottom-left {
+.about-2__steps-left {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 14px;
 }
-.about__bottom-icon {
+.about-2__icon {
     position: relative;
     width: 69px;
     height: 69px;
@@ -325,7 +320,7 @@ body {
     backdrop-filter: blur(3.0032px);
     border-radius: 68.5185px;
 }
-.about__bottom-icon::before {
+.about-2__icon::before {
     content: "";
     position: absolute;
     width: 69px;
@@ -337,7 +332,7 @@ body {
     top: -5px;
     left: -19px;
 }
-.about__bottom-icon span {
+.about-2__icon span {
     margin: 13px auto;
     display: block;
     width: 18px;
@@ -349,14 +344,14 @@ body {
     line-height: 43px;
     color: #05664F;
 }
-.about__bottom-right {
+.about-2__steps-right {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 77px;
 }
-.about__bottom-card-title {
+.about-2__step-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -365,7 +360,7 @@ body {
     color: var(--light);
     margin-bottom: 15px;
 }
-.about__bottom-card-desk {
+.about-2__step-desk {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
