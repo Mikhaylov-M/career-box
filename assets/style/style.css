@@ -193,7 +193,12 @@ body {
     padding: 103px 0 0;
     background: var(--dark);
 }
-.about__up {
+.about__svg {
+    position: absolute;
+    top: -80px;
+    right: 0;
+}
+.about__content {
     display: flex;
     justify-content: start;
     column-gap: 79px;
@@ -240,10 +245,6 @@ body {
 .about__right {
     position: relative;
 }
-.about__right svg {
-    position: absolute;
-    top: 0;
-}
 .about__card {
     padding: 14px;
     width: 531px;
@@ -271,7 +272,7 @@ body {
 /* ABOUT2 SECTION */
 .about-2 {
     position: relative;
-    padding: 0 0 130px;
+    padding: 155px 0 130px;
     background: var(--dark);
     border-bottom: 5px solid rgba(255, 255, 255, 0.15);
 }
