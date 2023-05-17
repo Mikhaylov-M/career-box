@@ -1,0 +1,134 @@
+@media (max-width: 1700px) {
+    .hero__title {
+        font-size: 160px;
+    }
+    .hero__desc {
+        font-size: 25px;
+    }
+    .hero__card svg {
+        max-width: 48%;
+    }
+    .hero__card-description {
+        font-size: 22px;
+    }
+    .countries__content {
+        height: 233px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        left: 145px;
+    }
+}
+@media (max-width: 1620px) {
+    .hero__title {
+        font-size: 155px;
+    }
+    .hero__desc {
+        font-size: 23px;
+    }
+    .about__title {
+        font-size: 120px;
+    }
+    .about__desc {
+        font-size: 19px;
+    }
+    .about-2__desc {
+        font-size: 45px;
+    }
+    .about-2__content {
+        margin-left: 43%;
+        max-width: 820px;
+    }
+    .countries__title {
+        font-size: 90px;
+    }
+    .partners__title {
+        font-size: 90px;
+    }
+    .footer__title {
+        font-size: 90px;
+    }
+    .footer__link {
+        font-size: 22px;
+    }
+    .footer__contact-desc {
+        font-size: 22px;
+    }
+    .footer__title-sm {
+        font-size: 22px;
+    }
+}
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1145px;
+    }
+    .header {
+        height: 85px;
+    }
+    .header__logo svg {
+        max-width: 85%;
+    }
+    .header__link {
+        font-size: 18px;
+    }
+    .header__button {
+        width: 180px;
+        height: 44px;
+        font-size: 18px;
+    }
+    .hero {
+        height: calc(100vh - 85px);
+    }
+    .hero__title {
+        font-size: 135px;
+        margin-bottom: 30px;
+    }
+    .hero__title::before {
+        bottom: 10px;
+    }
+    .hero__desc {
+        font-size: 19px;
+        padding-bottom: 40px;
+    }
+    .hero__card svg {
+        max-width: 40%;
+    }
+    .hero__card-description {
+        font-size: 20px;
+    }
+    .about {
+        padding: 45px 0 0;
+    }
+    .about__content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 79px;
+    }
+    .about__title {
+        margin-bottom: 13px;
+        font-size: 100px;
+    }
+    .about__desc {
+        font-size: 17px;
+    }
+    .about__card-1 {
+        margin-top: 91px;
+        margin-left: 95px;
+    }
+}
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
+@media (max-width: 500px) {
+
+}
+@media (max-width: 390px) {
+
+}

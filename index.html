@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CareerBox</title>
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/media.css">
 </head>
 <body>
 <header class="header" id="header">
@@ -79,9 +80,17 @@
         </div>
 </header>
 <section class="hero" id="hero">
+    <div class="hero__video">
+        <video autoplay loop muted poster="./assets/images/bg.jpg" width="100%" height="100%">
+            <source src="./assets/videos/bg.ogv" type="video/ogg">
+            <source src="./assets/videos/bg.mp4" type="video/mp4">
+            <source src="./assets/videos/bg.webm" type="video/webm">
+            Your browser doesn't support HTML5 video tag.
+        </video>
+    </div>
     <div class="hero__content">
         <h1 class="hero__title">CareerBox</h1>
-        <h4 class="hero__desk">Powering Your Business Through Quality Staffing Solutions</h4>
+        <h4 class="hero__desc">Powering Your Business Through Quality Staffing Solutions</h4>
         <div class="hero__cards">
             <div class="hero__card">
                 <svg width="94" height="78" viewBox="0 0 94 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,36 +247,23 @@
     </div>
 </section>
 <section class="about" id="about">
-    <div class="container">
-        <svg class="about__svg" width="1096" height="965" viewBox="0 0 1096 965" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_f_93_3413)">
-                <path d="M899.271 553.394C797.294 644.099 703.306 668.378 587.077 643.102C120.251 590.641 378.532 425.587 430.156 338.806C452.529 235.928 758.208 242.313 874.437 267.589C1027.93 286.692 981.191 451.093 899.271 553.394Z" fill="#55C90D" fill-opacity="0.4"/>
-            </g>
-            <defs>
-                <filter id="filter0_f_93_3413" x="0.357544" y="-60.2269" width="1287.04" height="1024.81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="156.04" result="effect1_foregroundBlur_93_3413"/>
-                </filter>
-            </defs>
-        </svg>
-        <div class="about__content">
-            <div class="about__left">
-                <img src="./assets/images/about-us.png" alt="about us transparent text" class="about__title-img">
-                <h2 class="about__title">about<br>us</h2>
-                <p class="about__desk">Our staffing company is dedicated to providing top-tier recruitment services to our clients. We specialize in assessing the needs of each job vacancy and then finding the ideal candidates to fill those positions.</p>
-                <p class="about__desk">Our team of experienced recruiters actively search for the best talent in the local and global markets, ensuring that we are able to find the perfect fit for each job opening.</p>
-                <p class="about__desk">We understand that every business has unique needs and our goal is to provide personalized solutions that meet those needs. Our recruiters are available to help you determine the best course of action for your organization, ensuring that you find the ideal candidates for your job openings.</p>
-            </div>
-            <div class="about__right">
-                <div class="about__card">
+    <div class="about__content container">
+        <img class="about__bg" src="./assets/images/Ellipse.png" alt="">
+        <div class="about__left">
+            <img src="./assets/images/about-us.png" alt="about us transparent text" class="about__title-img">
+            <h2 class="about__title">about<br>us</h2>
+            <p class="about__desc">Our staffing company is dedicated to providing top-tier recruitment services to our clients. We specialize in assessing the needs of each job vacancy and then finding the ideal candidates to fill those positions.</p>
+            <p class="about__desc">Our team of experienced recruiters actively search for the best talent in the local and global markets, ensuring that we are able to find the perfect fit for each job opening.</p>
+            <p class="about__desc">We understand that every business has unique needs and our goal is to provide personalized solutions that meet those needs. Our recruiters are available to help you determine the best course of action for your organization, ensuring that you find the ideal candidates for your job openings.</p>
+        </div>
+        <div class="about__right">
+                <div class="about__card about__card-1">
                     <img src="./assets/images/pexels-anna-shvets-5324960-1.png" alt="picture of women at the table in the office" class="about__image">
                 </div>
-                <div class="about__card">
+                <div class="about__card about__card-2">
                     <img src="./assets/images/pexels-anna-shvets-4226140-1.png" alt="woman at a table with a laptop in a meeting" class="about__image">
                 </div>
             </div>
-        </div>
     </div>
 </section>
 <section class="about-2" id="about-2">
@@ -370,19 +366,19 @@
             <div class="about-2__steps-right">
                 <div class="about-2__step">
                     <h4 class="about-2__step-title">Needs Assessment:</h4>
-                    <p class="about-2__step-desk">A staffing company will assess the needs of the organization or employer to determine the type of personnel they require.</p>
+                    <p class="about-2__step-desc">A staffing company will assess the needs of the organization or employer to determine the type of personnel they require.</p>
                 </div>
                 <div class="about-2__step">
                     <h4 class="about-2__step-title">Recruiting and Screening:</h4>
-                    <p class="about-2__step-desk">The staffing company will search for qualified candidates, conduct interviews, and use other screening methods to evaluate potential hires.</p>
+                    <p class="about-2__step-desc">The staffing company will search for qualified candidates, conduct interviews, and use other screening methods to evaluate potential hires.</p>
                 </div>
                 <div class="aabout-2__step">
                     <h4 class="about-2__step-title">Placement:</h4>
-                    <p class="about-2__step-desk">The staffing company will place the most qualified candidates in the organization or employer's open positions.</p>
+                    <p class="about-2__step-desc">The staffing company will place the most qualified candidates in the organization or employer's open positions.</p>
                 </div>
                 <div class="about-2__step">
                     <h4 class="about-2__step-title">Follow Up:</h4>
-                    <p class="about-2__step-desk">The staffing company will follow up with the organization or employer to ensure the placement was successful and address any issues that may arise.</p>
+                    <p class="about-2__step-desc">The staffing company will follow up with the organization or employer to ensure the placement was successful and address any issues that may arise.</p>
                 </div>
             </div>
         </div>
@@ -2610,16 +2606,6 @@
             <path d="M112 85.999L440.926 143.998" stroke="white" stroke-width="1.3658"/>
         </g>
     </svg>
-    <div class="partners__content">
-        <h2 class="partners__title">Our partners</h2>
-        <div class="partners__companies">
-            <div class="partners__logo"><img src="./assets/images/sber.png" alt="sber logo" class="partners__img"></div>
-            <div class="partners__logo"><img src="./assets/images/amazon.png" alt="amazon logo" class="partners__img"></div>
-            <div class="partners__logo"><img src="./assets/images/rostelecom.png" alt="rostelecom logo" class="partners__img"></div>
-            <div class="partners__logo"><img src="./assets/images/cotvec.png" alt="cotvec logo" class="partners__img"></div>
-            <div class="partners__logo"><img src="./assets/images/image_20.png" alt="logo" class="partners__img"></div>
-        </div>
-    </div>
     <svg class="partners__svg-2" width="657" height="872" viewBox="0 0 657 872" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.7">
             <rect x="73" y="39" width="45" height="45" rx="4.53094" transform="rotate(45 73 39)" fill="#00FFFF"/>
@@ -2642,6 +2628,40 @@
             <path d="M89 87L324.467 322.467" stroke="white" stroke-width="1.35928"/>
         </g>
     </svg>
+    <svg class="partners__svg-3" width="793" height="1136" viewBox="0 0 793 1136" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_93_3471)">
+            <path d="M321.319 671.836C228.345 745.309 146.833 760.288 51.8749 730.963C-333.716 656.294 -102.582 527.079 -52.0192 453.974C-24.521 364.932 230.224 389.38 325.183 418.705C451.808 444.886 398.526 586.945 321.319 671.836Z" fill="#55C90D" fill-opacity="0.2"/>
+        </g>
+        <defs>
+            <filter id="filter0_f_93_3471" x="-557.755" y="0.953339" width="1349.8" height="1135" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="195.453" result="effect1_foregroundBlur_93_3471"/>
+            </filter>
+        </defs>
+    </svg>
+    <svg class="partners__svg-4" width="1372" height="1216" viewBox="0 0 1372 1216" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_93_3470)">
+            <path d="M1101.59 749.064C973.091 830.809 856.974 843.069 717.465 799.985C154.483 678.898 477.417 539.281 544.678 454.624C577.355 348.812 947.991 399.161 1087.5 442.244C1272.51 484.021 1206.41 652.222 1101.59 749.064Z" fill="#55C90D" fill-opacity="0.1"/>
+        </g>
+        <defs>
+            <filter id="filter0_f_93_3470" x="0.680878" y="0.823456" width="1594.31" height="1214.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="195.453" result="effect1_foregroundBlur_93_3470"/>
+            </filter>
+        </defs>
+    </svg>
+    <div class="partners__content">
+        <h2 class="partners__title">Our partners</h2>
+        <div class="partners__companies">
+            <div class="partners__logo"><img src="./assets/images/sber.png" alt="sber logo" class="partners__img"></div>
+            <div class="partners__logo"><img src="./assets/images/amazon.png" alt="amazon logo" class="partners__img"></div>
+            <div class="partners__logo"><img src="./assets/images/rostelecom.png" alt="rostelecom logo" class="partners__img"></div>
+            <div class="partners__logo"><img src="./assets/images/cotvec.png" alt="cotvec logo" class="partners__img"></div>
+            <div class="partners__logo"><img src="./assets/images/image_20.png" alt="logo" class="partners__img"></div>
+        </div>
+    </div>
 </section>
 <footer class="footer" id="footer">
     <div class="container">
