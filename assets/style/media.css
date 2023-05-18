@@ -29,7 +29,7 @@
         font-size: 120px;
     }
     .about__desc {
-        font-size: 19px;
+        font-size: 18px;
     }
     .about-2__desc {
         font-size: 45px;
@@ -47,15 +47,6 @@
     .footer__title {
         font-size: 90px;
     }
-    .footer__link {
-        font-size: 22px;
-    }
-    .footer__contact-desc {
-        font-size: 22px;
-    }
-    .footer__title-sm {
-        font-size: 22px;
-    }
 }
 @media (max-width: 1440px) {
     .container {
@@ -65,7 +56,7 @@
         height: 85px;
     }
     .header__logo svg {
-        max-width: 85%;
+        max-width: 80%;
     }
     .header__link {
         font-size: 18px;
@@ -98,29 +89,390 @@
     .about {
         padding: 45px 0 0;
     }
+    .about__bg {
+        top: -75px;
+    }
     .about__content {
-        display: flex;
-        justify-content: space-between;
-        column-gap: 79px;
+        column-gap: 30px;
     }
     .about__title {
         margin-bottom: 13px;
         font-size: 100px;
+        line-height: 90px;
     }
     .about__desc {
-        font-size: 17px;
+        margin-bottom: 20px;
     }
-    .about__card-1 {
-        margin-top: 91px;
-        margin-left: 95px;
+    .about__desc::before {
+        bottom: -11px;
+    }
+    .about__card {
+        padding: 10px;
+        max-width: 100%;
+        margin-right: 95px;
+    }
+    .about__card-2 {
+        top: -16px;
+    }
+    .about-2__desc {
+        font-size: 42px;
+    }
+    .about-2__content {
+        margin-left: 46%;
+    }
+    .about-2__step-title {
+        font-size: 26px;
+    }
+    .about-2__step-desc {
+        font-size: 18px;
+    }
+    .about-2__steps-right {
+        gap: 42px;
+    }
+    .why {
+        padding: 80px 0 100px;
+    }
+    .why__title {
+        font-size: 100px;
+        margin-bottom: 63px;
+    }
+    .why__title-img {
+        width: 50%;
+    }
+    .why__card-icon {
+        margin-bottom: 20px;
+    }
+    .why__card-img {
+        width: 38%;
+    }
+    .why__card-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .why__card-desc {
+        font-size: 18px;
+        margin-bottom: 30px
+    }
+    .countries__title {
+        font-size: 80px;
+    }
+    .partners__title::before {
+        width: 668px;
+    }
+    .partners__svg-1 {
+        top: -430px;
+    }
+    .partners__svg-2 {
+        bottom: -540px;
+        left: -24px;
+    }
+    .partners__svg-3 {
+        top: -370px;
+        left: -95px;
+    }
+    .partners__svg-4 {
+        top: 0px;
+        right: -70px;
+    }
+    .countries__item {
+        font-size: 18px;
+    }
+    .partners__title {
+        font-size: 80px;
+    }
+    .footer {
+        padding: 60px 0 40px;
+    }
+    .footer .container {
+        column-gap: 50px;
+    }
+    .footer__logo {
+        width: 20%;
+    }
+    .footer__contact {
+        width: 50%;
+    }
+    .footer__title {
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+    .footer__title::before {
+        left: 15px;
+        width: 540px;
     }
 }
 @media (max-width: 1200px) {
-
+    .container {
+        max-width: 1000px;
+    }
+    .hero {
+        padding: 70px 0 0;
+    }
+    .hero__title {
+        font-size: 100px;
+        margin-bottom: 0;
+    }
+    .hero__title::before {
+        bottom: 30px;
+    }
+    .hero__desc {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .hero__card svg {
+        max-width: 35%;
+    }
+    .about__left {
+        overflow: hidden;
+    }
+    .about__title-img {
+        width: 50%;
+    }
+    .about__title {
+        font-size: 90px;
+    }
+    .about__bg {
+        width: 70%;
+        top: -43px;
+        right: 0px;
+    }
+    .about__card {
+        padding: 7px;
+        max-height: 217px;
+    }
+    .about-2 {
+        position: relative;
+        padding: 90px 0 80px;
+    }
+    .about-2__title {
+        padding-left: 115px;
+        max-width: 485px;
+    }
+    .why__title {
+        font-size: 95px;
+        line-height: 55px;
+    }
+    .why__card::after {
+        height: 425px;
+    }
+    .why__card::before {
+        height: 397px;
+        bottom: 48px;
+    }
+    .why__card-img {
+        width: 30%;
+    }
+    .why__card-icon {
+        margin-bottom: 5px;
+    }
+    .why__card-title {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    .why__card-desc {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .countries {
+        padding-top: 40px;
+    }
+    .countries__title-img {
+        width: 50%;
+    }
+    .countries__svg {
+        width: 100%;
+        height: 100%;
+    }
+    .countries__content {
+        left: 56px;
+        top: 363px;
+    }
+    .partners {
+        padding: 65px 0 65px;
+    }
+    .partners__svg-1 {
+        top: -464px;
+    }
+    .partners__svg-2 {
+        left: -88px;
+    }
+    .partners__content {
+        max-width: 1000px;
+        height: 360px;
+    }
+    .partners__title {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+    .partners__title::before {
+        width: 587px;
+    }
+    .footer .container {
+        column-gap: 30px;
+    }
+    .footer__title {
+        font-size: 70px;
+        margin-bottom: 35px;
+        line-height: 100px;
+    }
+    .footer__title::before {
+        left: 10px;
+        width: 520px;
+    }
+    .footer__contact-items {
+        column-gap: 30px;
+    }
+    .footer__contact-item {
+        margin-bottom: 20px;
+    }
+    .footer__contact-desc {
+        font-size: 20px;
+    }
+    .footer__contact-desc {
+        font-size: 20px;
+    }
+    .social__link {
+        margin-right: 25px;
+    }
 }
 
 @media (max-width: 768px) {
-
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        height: 110px;
+        background: #010405;
+    }
+    .header__menu {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .header__button {
+        display: none;
+    }
+    .hero {
+        background: #010405;
+    }
+    .hero__video {
+        display: none;
+    }
+    .hero__title {
+        font-size: 80px;
+        line-height: 87px;
+        margin-bottom: 42px;
+    }
+    .hero__title::before {
+        bottom: -5px;
+        width: 178px;
+    }
+    .hero__desc {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .hero__cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    .hero__card svg {
+        max-width: 100%;
+    }
+    .hero__card-description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hero__button {
+        display: block;
+    }
+    .about__bg {
+        width: 150%;
+        top: 598px;
+    }
+    .about__content {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 47px;
+    }
+    .about__title {
+        margin-bottom: 35px;
+    }
+    .about__left {
+        max-width: 100%;
+    }
+    .about__title-img {
+        width: 60%;
+    }
+    .about__desc {
+        margin-bottom: 30px;
+    }
+    .about__desc::before {
+        display: none;
+    }
+    .about__right {
+        width: 100%;
+    }
+    .about__card {
+        padding: 10px;
+        max-width: 80%;
+        margin-right: 0;
+        max-height: 378px;
+    }
+    .about-2 {
+        padding: 1px 0 80px;
+    }
+    .about-2__container > svg {
+        top: -450px;
+        left: -100px;
+    }
+    .about__card-1 {
+        top: 0;
+    }
+    .about__card-2 {
+        top: -151px;
+    }
+    .about-2__title {
+        padding: 31px 200px 31px 17px;
+        position: unset;
+        margin: 0;
+        max-width: 90%;
+    }
+    .about-2__desc {
+        font-size: 49px;
+        line-height: 60px;
+    }
+    .about-2__steps-right {
+        gap: 44px;
+    }
+    .about-2__content {
+        padding-top: 49px;
+        margin-left: 0;
+        column-gap: 30px;
+    }
+    .about-2__step-title {
+        font-size: 38px;
+    }
+    .about-2__step-desc {
+        font-size: 22px;
+    }
+    .why__cards {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .why__card-icon {
+        margin-bottom: 25px;
+    }
+    .why__card-title {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .why__card-desk {
+        font-size: 24px;
+        line-height: 26px;
+    }
 }
 
 @media (max-width: 600px) {
