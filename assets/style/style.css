@@ -27,6 +27,12 @@ html {
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif ;
 }
+section {
+    overflow: hidden;
+}
+footer {
+    overflow: hidden;
+}
 /* BASE CONFIGS */
 
 /* UNIQUE */

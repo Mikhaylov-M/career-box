@@ -288,7 +288,7 @@
         top: 363px;
     }
     .partners {
-        padding: 65px 0 65px;
+        padding: 68px 0 82px;
     }
     .partners__svg-1 {
         top: -464px;
@@ -355,6 +355,8 @@
     }
     .hero {
         background: #010405;
+        height: unset;
+        padding: 67px 0 70px;
     }
     .hero__video {
         display: none;
@@ -457,6 +459,13 @@
     .about-2__step-desc {
         font-size: 22px;
     }
+    .why__title-img {
+        width: 65%;
+    }
+    .why__title {
+        font-size: 90px;
+        line-height: 40px;
+    }
     .why__cards {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -464,23 +473,278 @@
     .why__card-icon {
         margin-bottom: 25px;
     }
+    .why__card {
+        max-width: 480px;
+    }
+    .why__card::before {
+        height: 430px;
+        bottom: -26px;
+    }
+    .why__card::after {
+        height: 505px;
+    }
     .why__card-title {
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 30px;
+        line-height: 30px;
         margin-bottom: 20px;
     }
-    .why__card-desk {
+    .why__card-desc {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .countries {
+        padding-top: 18px;
+    }
+    .countries__svg {
+        position: relative;
+        width: 143%;
+        left: -19%;
+    }
+    .countries__title::before {
+        display: none;
+    }
+    .countries__content {
+        display: none;
+    }
+    .partners__svg-1 {
+        width: 50%;
+        right: -108px;
+        top: -346px;
+        bottom: unset;
+    }
+    .partners__svg-2 {
+        width: 50%;
+        left: -67px;
+        bottom: -442px;
+    }
+    .partners__svg-3 {
+        display: none;
+    }
+    .partners__svg-4 {
+        display: none;
+    }
+    .partners__title {
+        font-size: 65px;
+        line-height: 90px;
+    }
+    .partners__content {
+        max-width: 650px;
+        height: 350px;
+        overflow: hidden;
+    }
+    .partners__title::before {
+        display: none;
+    }
+    .partners__companies {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .first-logo {
+        order: -2;
+    }
+    .second-logo {
+        order: -1;
+    }
+    .footer .container {
+        column-gap: 45px;
+        flex-wrap: wrap;
+        row-gap: 54px;
+    }
+    .footer__logo {
+        width: 47%;
+    }
+    .footer__contact {
+        width: 100%;
+    }
+    .footer__contact-desc {
         font-size: 24px;
-        line-height: 26px;
+        line-height: 36px;
+    }
+    .social__link {
+        margin-right: 30px;
     }
 }
 
 @media (max-width: 600px) {
-
+    .container {
+        max-width: 560px;
+    }
+    .hero__title {
+        font-size: 72px;
+    }
+    .hero__desk {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .about__title {
+        font-size: 80px;
+        line-height: 75px;
+    }
+    .about__bg {
+        width: 135%;
+        top: 651px;
+    }
+    .about-2__container > svg {
+        width: 100%;
+        top: -525px;
+        left: -31px;
+    }
+    .about-2__title {
+        padding: 31px 45px 24px 23px;
+    }
+    .about-2__steps-right {
+        gap: 65px;
+    }
+    .about-2__step-title {
+        font-size: 26px;
+        line-height: 25px;
+    }
+    .about-2__step-desc {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .countries__title {
+        font-size: 65px;
+    }
+    .partners__content {
+        max-width: 545px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .partners__title {
+        font-size: 50px;
+        line-height: 118px;
+    }
+    .footer__title::before {
+        width: 395px;
+    }
+    .footer__contact-items {
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 @media (max-width: 500px) {
-
+    .container {
+        max-width: 460px;
+    }
+    .about__bg {
+        width: 154%;
+        top: 741px;
+        right: -45px;
+    }
+    .about-2 {
+        overflow: unset;
+    }
+    .about-2__desc {
+        font-size: 40px;
+        line-height: 50px;
+        height: 222px;
+    }
+    .about-2__steps-right {
+        gap: 63px;
+    }
+    .about-2__step-title {
+        font-size: 24px;
+        line-height: 17px;
+    }
+    .about-2__step-desc {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .why {
+        padding-top: 72px;
+    }
+    .why__title-img {
+        width: 79%;
+    }
+    .why__title {
+        font-size: 70px;
+        line-height: 63px;
+    }
+    .why__card {
+        max-width: 100%;
+        height: 445px;
+    }
+    .why__card::before {
+        height: 370px;
+        bottom: -26px;
+    }
+    .why__card::after {
+        height: 445px;
+    }
+    .why__card-title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .why__card-desc {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .why__card-btn {
+        width: 338px;
+    }
+    .countries__title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .partners__content {
+        padding: 32px 0 45px;
+        max-width: 455px;
+        height: 321px;
+    }
+    .partners__title {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 390px) {
-
+    .container {
+        max-width: 370px;
+    }
+    .about__bg {
+        top: 880px;
+    }
+    .about-2__container > svg {
+        top: -595px;
+        left: -13px;
+    }
+    .about-2__title {
+        max-width: 95%;
+        padding: 23px;
+        height: 200px
+    }
+    .about-2__icon {
+        width: 59px;
+        height: 59px;
+    }
+    .about-2__icon::before {
+        width: 59px;
+        height: 59px;
+    }
+    .about-2__steps-right {
+        gap: 30px;
+    }
+    .about-2__step-title {
+        line-height: 20px;
+    }
+    .why__card {
+        max-width: 315px;
+    }
+    .why__card-btn {
+        width: 227px;
+    }
+    .partners__content {
+        padding: 0;
+        max-width: 365px;
+        height: 245px;
+    }
+    .footer .container {
+        row-gap: 20px;
+    }
+    .footer__title {
+        font-size: 50px;
+        line-height: 61px;
+    }
+    .footer__title::before {
+        width: 285px;
+    }
 }
