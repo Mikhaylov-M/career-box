@@ -538,6 +538,7 @@
     .partners__companies {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        gap: 50px;
     }
     .first-logo {
         order: -2;
@@ -702,6 +703,14 @@
     }
     .about__bg {
         top: 880px;
+    }
+    .about__card {
+        padding: 6px;
+        max-width: 73%;
+        max-height: 176px;
+    }
+    .about__card-2 {
+        top: -71px;
     }
     .about-2__container > svg {
         top: -595px;
