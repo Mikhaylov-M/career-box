@@ -726,7 +726,7 @@ footer {
 .countries__wrapper {
   position: relative;
   height: 673px;
-  background: url("../images/map.png") no-repeat center/contain;
+  background: url("../images/map.webp") no-repeat center/contain;
 }
 
 .countries__list {
