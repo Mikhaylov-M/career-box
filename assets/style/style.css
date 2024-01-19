@@ -289,6 +289,18 @@ footer {
   margin-bottom: 41px;
 }
 
+.hero__img-wrapper {
+  width: 105px;
+  height: 85px;
+  overflow: hidden;
+}
+
+.hero__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero__title::before {
   content: "";
   position: absolute;
@@ -333,6 +345,7 @@ footer {
 
 .hero__card-description {
   font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
