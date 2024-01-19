@@ -375,10 +375,21 @@
   <script>
     const burgerBtn = document.querySelector('.header__burger-btn')
     const burgerMenu = document.querySelector('.mob-menu')
+    const menuLinks = document.querySelectorAll('.mob-menu__links')
+
     burgerBtn.addEventListener('click', () => {
-      burgerMenu.classList.toggle('active')
-      burgerBtn.classList.toggle('active')
+      burgerMenu.classList.add('active')
+      burgerBtn.classList.add('active')
     })
+
+    menuLinks.forEach((e) => {
+      e.addEventListener('click', () => {
+        burgerMenu.classList.remove('active')
+        burgerBtn.classList.remove('active')
+      })
+    })
+
+
   </script>
 </body>
 
