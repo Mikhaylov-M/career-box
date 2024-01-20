@@ -56,10 +56,6 @@
   .countries__title {
     font-size: 90px;
   }
-
-  .partners__title {
-    font-size: 90px;
-  }
 }
 
 @media (max-width: 1440px) {
@@ -158,10 +154,6 @@
     font-size: 80px;
   }
 
-  .partners__title::before {
-    width: 668px;
-  }
-
   .partners__svg-1 {
     top: -430px;
   }
@@ -183,10 +175,6 @@
 
   .countries__item {
     font-size: 18px;
-  }
-
-  .partners__title {
-    font-size: 80px;
   }
 
   .footer__logo {
@@ -301,20 +289,6 @@
     left: -88px;
   }
 
-  .partners__content {
-    max-width: 1000px;
-    height: 360px;
-  }
-
-  .partners__title {
-    font-size: 70px;
-    margin-bottom: 10px;
-  }
-
-  .partners__title::before {
-    width: 587px;
-  }
-
   .social__link {
     margin-right: 25px;
   }
@@ -368,6 +342,10 @@
   .header__button {
     padding: 8px 20px;
     font-size: 16px;
+  }
+
+  .partners__title {
+    font-size: 60px;
   }
 }
 
@@ -560,6 +538,15 @@
     display: none;
   }
 
+  .partners__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .partners__content {
+    padding: 20px;
+  }
+
   .partners::after,
   .partners::before {
     width: 482px;
@@ -592,21 +579,6 @@
   }
 
   .partners__svg-4 {
-    display: none;
-  }
-
-  .partners__title {
-    font-size: 65px;
-    line-height: 90px;
-  }
-
-  .partners__content {
-    max-width: 650px;
-    height: 350px;
-    overflow: hidden;
-  }
-
-  .partners__title::before {
     display: none;
   }
 
@@ -672,17 +644,6 @@
 
   .about-2__step-desc {
     font-size: 16px;
-  }
-
-  .partners__content {
-    max-width: 545px;
-    height: 400px;
-    overflow: hidden;
-  }
-
-  .partners__title {
-    font-size: 50px;
-    line-height: 118px;
   }
 
   .countries {
@@ -784,15 +745,9 @@
     font-size: 35px;
   }
 
-  .partners__content {
-    padding: 32px 0 45px;
-    max-width: 455px;
-    height: 321px;
-  }
-
   .partners__title {
-    font-size: 40px;
-    margin-bottom: 0;
+    font-size: 30px;
+    padding-bottom: 20px;
   }
 
   .partners::after,
@@ -850,14 +805,12 @@
     font-size: 14px;
   }
 
-  .partners__content {
-    padding: 0;
-    max-width: 365px;
-    height: 245px;
-  }
-
-
   .why__list {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .partners__title {
+    font-size: 25px;
+    padding-bottom: 10px;
   }
 }

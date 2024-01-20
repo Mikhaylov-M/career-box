@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CareerBox</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/style.css">
   <link rel="stylesheet" href="./assets/style/media.css">
   <!-- <link rel="preload" href="/dir/font-name.woff2" as="font" type="font/woff2" /> -->
@@ -251,16 +252,50 @@
   </section>
 
   <section class="partners" id="partners">
-    <div class="partners__content">
-      <h2 class="partners__title">Our partners</h2>
-      <div class="partners__companies">
-        <div class="partners__logo"><img src="./assets/images/sber.png" alt="sber logo" class="partners__img"></div>
-        <div class="partners__logo"><img src="./assets/images/amazon.png" alt="amazon logo" class="partners__img"></div>
-        <div class="partners__logo first-logo"><img src="./assets/images/rostelecom.png" alt="rostelecom logo"
-            class="partners__img"></div>
-        <div class="partners__logo second-logo"><img src="./assets/images/cotvec.png" alt="cotvec logo"
-            class="partners__img"></div>
-        <div class="partners__logo"><img src="./assets/images/image_20.png" alt="logo" class="partners__img"></div>
+    <div class="container">
+      <div class="partners__content">
+        <h2 class="partners__title">Our partners</h2>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="partners__logo">
+                <img src="./assets/images/partners-1.PNG" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partners__logo">
+                <img src="./assets/images/partners-2.PNG" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partners__logo first-logo">
+                <img src="./assets/images/partners-3.svg" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partners__logo first-logo">
+                <img src="./assets/images/partners-4.PNG" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partners__logo first-logo">
+                <img src="./assets/images/partners-5.PNG" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partners__logo first-logo">
+                <img src="./assets/images/partners-6.PNG" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partners__logo first-logo">
+                <img src="./assets/images/partners-7.JPG" alt="" class="partners__img">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -330,6 +365,8 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const body = document.querySelector('#body');
@@ -338,7 +375,6 @@
       const menuLinks = document.querySelectorAll('.mob-menu__links');
       const footerLinks = document.querySelectorAll('.footer__links');
       const headerLinks = document.querySelectorAll('.header__link');
-
       function scrollToSection(targetSection, offset) {
         if (targetSection) {
           var targetPosition = targetSection.offsetTop;
@@ -348,7 +384,6 @@
           });
         }
       }
-
       burgerBtn.addEventListener('click', () => {
         if (burgerMenu.classList.contains('active')) {
           burgerMenu.classList.remove('active');
@@ -360,7 +395,6 @@
           body.classList.add('lock');
         }
       });
-
       // Проверяем ширину экрана при загрузке страницы и добавляем/убираем классы
       function checkScreenWidth() {
         if (window.innerWidth > 768) {
@@ -369,11 +403,8 @@
           body.classList.remove('lock');
         }
       }
-
       checkScreenWidth(); // Вызываем функцию при загрузке страницы
-
       window.addEventListener('resize', checkScreenWidth); // Обрабатываем изменение размеров экрана
-
       menuLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
@@ -385,7 +416,6 @@
           body.classList.remove('lock'); // Убираем класс lock при клике на ссылку в меню
         });
       });
-
       footerLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
@@ -394,7 +424,6 @@
           scrollToSection(targetSection, -50);
         });
       });
-
       headerLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
@@ -403,6 +432,37 @@
           scrollToSection(targetSection, -100);
         });
       });
+    });
+
+
+
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+
+      slidesPerView: 4,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
     });
 
 
