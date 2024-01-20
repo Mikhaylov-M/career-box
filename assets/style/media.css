@@ -588,10 +588,6 @@
     gap: 50px;
   }
 
-  .first-logo {
-    order: -2;
-  }
-
   .second-logo {
     order: -1;
   }
@@ -739,6 +735,7 @@
   .why__btn {
     max-width: 100%;
     font-size: 14px;
+    text-align: center;
   }
 
   .countries__title {
