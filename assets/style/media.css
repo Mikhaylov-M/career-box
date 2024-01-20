@@ -154,24 +154,6 @@
     width: 50%;
   }
 
-  .why__card-icon {
-    margin-bottom: 20px;
-  }
-
-  .why__card-img {
-    width: 38%;
-  }
-
-  .why__card-title {
-    font-size: 26px;
-    margin-bottom: 20px;
-  }
-
-  .why__card-desc {
-    font-size: 18px;
-    margin-bottom: 30px
-  }
-
   .countries__title {
     font-size: 80px;
   }
@@ -281,39 +263,12 @@
   }
 
   .about-2__title {
-    padding-left: 115px;
+    padding-left: 48px;
     max-width: 485px;
   }
 
   .why__title {
     font-size: 80px;
-  }
-
-  .why__card::after {
-    height: 425px;
-  }
-
-  .why__card::before {
-    height: 397px;
-    bottom: 48px;
-  }
-
-  .why__card-img {
-    width: 30%;
-  }
-
-  .why__card-icon {
-    margin-bottom: 5px;
-  }
-
-  .why__card-title {
-    font-size: 23px;
-    margin-bottom: 10px;
-  }
-
-  .why__card-desc {
-    font-size: 14px;
-    margin-bottom: 20px;
   }
 
   .countries__title-img {
@@ -386,7 +341,12 @@
 
   .about-2__title {
     padding-left: 50px;
-    max-width: 422px;
+    max-width: 352px;
+    height: 200px;
+  }
+
+  .about-2__desc {
+    font-size: 30px;
   }
 
   .about-2__container>span {
@@ -412,7 +372,6 @@
 }
 
 @media (max-width: 768px) {
-
   .header {
     background: #010405;
   }
@@ -541,6 +500,7 @@
     padding: 30px 15px;
     position: unset;
     margin: 0;
+    height: 140px;
   }
 
   .about-2__steps-right {
@@ -561,36 +521,21 @@
     font-size: 60px;
   }
 
-  .why__cards {
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  .why__img-wrapper {
+    width: 80px;
+    height: 80px;
   }
 
-  .why__card-icon {
-    margin-bottom: 25px;
+  .why__inner-title {
+    font-size: 25px;
   }
 
-  .why__card {
-    padding: 15px;
+  .why__text {
+    font-size: 18px;
   }
 
-  .why__card::before {
-    height: 430px;
-    bottom: -26px;
-  }
-
-  .why__card::after {
-    height: 505px;
-  }
-
-  .why__card-title {
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 20px;
-  }
-
-  .why__card-desc {
-    font-size: 20px;
-    margin-bottom: 20px;
+  .why__btn {
+    font-size: 16px;
   }
 
   .countries {
@@ -713,6 +658,10 @@
     padding: 31px 45px 24px 23px;
   }
 
+  .about-2__desc {
+    font-size: 25px;
+  }
+
   .about-2__steps-right {
     gap: 65px;
   }
@@ -723,10 +672,6 @@
 
   .about-2__step-desc {
     font-size: 16px;
-  }
-
-  .countries__title {
-    font-size: 65px;
   }
 
   .partners__content {
@@ -740,8 +685,16 @@
     line-height: 118px;
   }
 
+  .countries {
+    padding: 20px 0;
+  }
+
+  .countries__title {
+    font-size: 45px;
+  }
+
   .countries__wrapper {
-    height: 300px;
+    height: 200px;
   }
 
   .footer__wrapper {
@@ -753,9 +706,26 @@
   .footer__links {
     text-align: center;
   }
+
+  .why__text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 500px) {
+
+  .hero {
+    padding: 20px 0 40px;
+  }
+
+  .hero__title {
+    font-size: 55px;
+  }
+
+  .hero__button {
+    width: 100%;
+    font-size: 18px;
+  }
 
   .about__title {
     font-size: 45px;
@@ -772,6 +742,11 @@
     top: -100px;
   }
 
+  .about-2__container>span {
+    width: 350px;
+    height: 320px;
+  }
+
   .about__card-1 {
     left: 120px;
   }
@@ -781,8 +756,6 @@
   }
 
   .about-2__desc {
-    font-size: 40px;
-    line-height: 50px;
     height: 222px;
   }
 
@@ -798,40 +771,17 @@
     width: 79%;
   }
 
-  .why__card {
-    height: 445px;
-  }
-
   .why__title {
     font-size: 45px;
   }
 
-  .why__card::before {
-    height: 370px;
-    bottom: -26px;
-  }
-
-  .why__card::after {
-    height: 445px;
-  }
-
-  .why__card-title {
-    font-size: 24px;
-    line-height: 26px;
-  }
-
-  .why__card-desc {
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .why__card-btn {
-    width: 100%;
+  .why__btn {
+    max-width: 100%;
+    font-size: 14px;
   }
 
   .countries__title {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 35px;
   }
 
   .partners__content {
@@ -878,9 +828,8 @@
   }
 
   .about-2__title {
-    max-width: 95%;
     padding: 23px;
-    height: 200px
+    height: 114px;
   }
 
   .about-2__icon {
@@ -901,17 +850,14 @@
     font-size: 14px;
   }
 
-  .why__card-btn {
-    width: 227px;
-  }
-
   .partners__content {
     padding: 0;
     max-width: 365px;
     height: 245px;
   }
 
-  .why__cards {
-    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+
+  .why__list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }

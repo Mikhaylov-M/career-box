@@ -39,6 +39,12 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+.lock {
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
 section {
   overflow: hidden;
 }
@@ -195,7 +201,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 90px 20px;
+  height: 65vh;
   transform: translateY(-150%);
   transition: all .5s;
   background: rgba(14, 35, 40, 0.50);
@@ -212,6 +218,7 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  padding: 90px 20px;
 }
 
 .mob-menu__links {
@@ -353,8 +360,9 @@ footer {
 
 .hero__button {
   display: none;
-  width: 80%;
-  height: 50px;
+  padding: 10px 50px;
+  width: 60%;
+  text-align: center;
   border: 2.04px solid var(--light-green);
   border-radius: 3px;
   font-family: 'Poppins', sans-serif;
@@ -518,7 +526,7 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 50px;
-  line-height: 60px;
+  line-height: 1.3em;
   color: var(--light);
 }
 
@@ -618,6 +626,7 @@ footer {
   position: relative;
   padding: 107px 0 178px;
   background: var(--deep-dark);
+  color: var(--light);
 }
 
 .why__title-img {
@@ -637,92 +646,90 @@ footer {
   margin-bottom: 127px;
 }
 
-.why__cards {
+.why__list {
+  gap: 70px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 69px;
-  padding-left: 29px;
-  padding-bottom: 26px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
 
-.why__card {
+.why__items {
   position: relative;
+  width: 100%;
   margin: 0 auto;
-  padding: 26px;
-  height: 505px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255, .1);
+  padding: 25px;
+  border-radius: 20px;
   z-index: 5;
+  /* filter: blur(10px); */
 }
 
-.why__card::before {
+.why__items::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 430px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10.1395px);
-  border-radius: 15.1075px;
-  left: -29px;
-  bottom: -26px;
-  z-index: -1;
-}
-
-.why__card::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 505px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10.1395px);
-  border-radius: 15.1075px;
-  z-index: -1;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  fill: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10.139504432678223px);
+  z-index: -1;
+  border-radius: 20px;
 }
 
-.why__card-icon {
-  margin-bottom: 24px;
+.why__items::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: 100%;
+  height: 70%;
+  background-color: rgb(255, 255, 255, .1);
+  border-radius: 20px;
+  z-index: -1;
 }
 
-.why__card-content {
-  padding-left: 22px;
+.why__img-wrapper {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
 }
 
-.why__card-title {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
+.why__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why__inner-title {
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
-  line-height: 30px;
-  color: var(--light);
-  margin-bottom: 23px;
+  font-weight: 600;
+  line-height: 1.3em;
 }
 
-.why__card-desc {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
+.why__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: var(--light);
-  margin-bottom: 37px;
+  line-height: 1.3em;
 }
 
-.why__card-btn {
-  width: 208px;
-  height: 50px;
-  border: 2.04px solid var(--light-green);
-  border-radius: 3px;
-  font-family: 'Poppins', sans-serif;
+.why__btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  line-height: 1.3em;
+  padding: 10px 40px;
   color: var(--light);
-}
+  border-radius: 3px;
+  border: 2.04px solid var(--light-green);
+  width: 100%;
+  max-width: 215px;
 
-.why__card-btn:hover {
-  background: var(--light-green);
-  color: var(--dark);
-  transition: 0.3s;
+  margin-top: auto;
 }
 
 /* WHY SECTION */
@@ -768,7 +775,7 @@ footer {
   font-style: normal;
   font-weight: 800;
   font-size: 100px;
-  line-height: 118px;
+  line-height: 1.3em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--dark-green);

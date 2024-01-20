@@ -12,7 +12,7 @@
   <!-- <link rel="preload" href="/dir/font-name.woff2" as="font" type="font/woff2" /> -->
 </head>
 
-<body style="font-family: Tahoma, Verdana, sans-serif">
+<body style="font-family: Tahoma, Verdana, sans-serif" id="body">
 
   <header class="header" id="header">
     <div class="header__content container">
@@ -51,36 +51,38 @@
   </header>
 
   <section class="hero" id="hero">
-    <div class="hero__video">
-      <video autoplay loop muted poster="./assets/images/bg.jpg" preload="auto">
-        <source src="./assets/videos/bg.mp4" type="video/mp4">
-        Your browser doesn't support HTML5 video tag.
-      </video>
-    </div>
-    <div class="hero__content">
-      <h1 class="hero__title">CareerBox</h1>
-      <h4 class="hero__desc">Powering Your Business Through Quality Staffing Solutions</h4>
-      <div class="hero__cards">
-        <div class="hero__card">
-          <div class="hero__img-wrapper">
-            <img src="./assets/images/hero-1.svg" alt="">
-          </div>
-          <p class="hero__card-description">Cost Savings</p>
-        </div>
-        <div class="hero__card">
-          <div class="hero__img-wrapper">
-            <img src="./assets/images/hero-2.svg" alt="">
-          </div>
-          <p class="hero__card-description">Access to Talent</p>
-        </div>
-        <div class="hero__card">
-          <div class="hero__img-wrapper">
-            <img src="./assets/images/hero-3.svg" alt="">
-          </div>
-          <p class="hero__card-description">Time Savings</p>
-        </div>
+    <div class="container">
+      <div class="hero__video">
+        <video autoplay loop muted poster="./assets/images/bg.jpg" preload="auto">
+          <source src="./assets/videos/bg.mp4" type="video/mp4">
+          Your browser doesn't support HTML5 video tag.
+        </video>
       </div>
-      <a class="hero__button" href="#footer">Get in touch</a>
+      <div class="hero__content">
+        <h1 class="hero__title">CareerBox</h1>
+        <h4 class="hero__desc">Powering Your Business Through Quality Staffing Solutions</h4>
+        <div class="hero__cards">
+          <div class="hero__card">
+            <div class="hero__img-wrapper">
+              <img src="./assets/images/hero-1.svg" alt="">
+            </div>
+            <p class="hero__card-description">Cost Savings</p>
+          </div>
+          <div class="hero__card">
+            <div class="hero__img-wrapper">
+              <img src="./assets/images/hero-2.svg" alt="">
+            </div>
+            <p class="hero__card-description">Access to Talent</p>
+          </div>
+          <div class="hero__card">
+            <div class="hero__img-wrapper">
+              <img src="./assets/images/hero-3.svg" alt="">
+            </div>
+            <p class="hero__card-description">Time Savings</p>
+          </div>
+        </div>
+        <a class="hero__button" href="#footer">Get in touch</a>
+      </div>
     </div>
   </section>
 
@@ -157,41 +159,45 @@
     <div class="container">
       <img src="./assets/images/why_us.png" alt="why us text" class="why__title-img">
       <h3 class="why__title">why us?</h3>
-      <div class="why__cards">
-        <div class="why__card">
-          <div class="why__card-icon">
-            <img src="./assets/images/Users.png" alt="users icon" class="why__card-img">
+      <ul class="why__list">
+        <li class="why__items">
+          <div class="why__img-wrapper">
+            <img class="why__img" src="./assets/images/why-1.png" alt="">
           </div>
-          <div class="why__card-content">
-            <h4 class="why__card-title">Lorem ipsum</h4>
-            <p class="why__card-desc">Lorem ipsum dolor sit amet consectetur. Mauris diam nisi nec orci sem vestibulum.
-              Neque tempus amet sit nec lectus ultricies phasellus potenti conv</p>
-            <a class="why__card-btn" href="#footer">Get in touch</a>
+          <h3 class="why__inner-title">Creative</h3>
+          <p class="why__text">
+            We are creative and we always look for better and new approaches to cooperation. Choose a business instead
+            of words!
+            With us you will truly learn and understand what loyalty really is.
+          </p>
+          <button class="why__btn">Get in touch</button>
+        </li>
+        <li class="why__items">
+          <div class="why__img-wrapper">
+            <img class="why__img" src="./assets/images/why-2.png" alt="">
           </div>
-        </div>
-        <div class="why__card">
-          <div class="why__card-icon">
-            <img src="./assets/images/Down.png" alt="down icon" class="why__card-img">
+          <h3 class="why__inner-title">Team</h3>
+          <p class="why__text">
+            Our team of recruitment experts are passionate about what we do, and we're committed to providing you with
+            the highest
+            level of service and support. From candidate sourcing and screening to interview coordination and offer
+            negotiation,
+            we'll be with you every step of the way to ensure a smooth and successful hiring process.
+          </p>
+          <button class="why__btn">Get in touch</button>
+        </li>
+        <li class="why__items">
+          <div class="why__img-wrapper">
+            <img class="why__img" src="./assets/images/why-3.png" alt="">
           </div>
-          <div class="why__card-content">
-            <h4 class="why__card-title">Lorem ipsum</h4>
-            <p class="why__card-desc">Lorem ipsum dolor sit amet consectetur. Mauris diam nisi nec orci sem vestibulum.
-              Neque tempus amet sit nec lectus ultricies phasellus potenti conv</p>
-            <a class="why__card-btn" href="#footer">Get in touch</a>
-          </div>
-        </div>
-        <div class="why__card">
-          <div class="why__card-icon">
-            <img src="./assets/images/Portfolio.png" alt="portfolio icon" class="why__card-img">
-          </div>
-          <div class="why__card-content">
-            <h4 class="why__card-title">Lorem ipsum</h4>
-            <p class="why__card-desc">Lorem ipsum dolor sit amet consectetur. Mauris diam nisi nec orci sem vestibulum.
-              Neque tempus amet sit nec lectus ultricies phasellus potenti conv</p>
-            <a class="why__card-btn" href="#footer">Get in touch</a>
-          </div>
-        </div>
-      </div>
+          <h3 class="why__inner-title">Benefit</h3>
+          <p class="why__text">
+            You win because we focus on fast and high-quality searches. We don't waste time!
+            And the most attractive thing about us is the price and deal we offer you, “QUALITY - PRICE RATIO”!
+          </p>
+          <button class="why__btn">Get in touch</button>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -276,16 +282,16 @@
           <h2 class="footer__title">Contact us</h2>
           <div class="footer__inner">
             <div class="footer__contacts">
-              <a class="footer__contacts-link footer__contacts-link--phone" href="tel:+996500202404">
+              <a class="footer__contacts-link footer__contacts-link--phone" href="tel:+48732789098">
                 <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="49.1011" height="49.1011" rx="7" fill="white" />
                   <path
                     d="M18.6707 19.9651C19.733 22.1778 21.1812 24.2516 23.0153 26.0856C24.8493 27.9197 26.9231 29.3679 29.1357 30.4302C29.3261 30.5216 29.4212 30.5673 29.5416 30.6024C29.9696 30.7271 30.495 30.6375 30.8574 30.378C30.9594 30.305 31.0466 30.2178 31.2211 30.0433C31.7548 29.5096 32.0216 29.2428 32.2899 29.0684C33.3017 28.4105 34.6061 28.4105 35.6179 29.0684C35.8862 29.2428 36.153 29.5096 36.6866 30.0433L36.9841 30.3407C37.7953 31.1519 38.2008 31.5575 38.4212 31.9931C38.8593 32.8594 38.8593 33.8824 38.4212 34.7488C38.2008 35.1843 37.7953 35.5899 36.9841 36.4011L36.7435 36.6417C35.9351 37.4501 35.5309 37.8543 34.9813 38.163C34.3715 38.5056 33.4244 38.7519 32.725 38.7498C32.0947 38.7479 31.6639 38.6256 30.8024 38.3811C26.1723 37.0669 21.8033 34.5874 18.1584 30.9425C14.5135 27.2975 12.0339 22.9285 10.7198 18.2985C10.4752 17.4369 10.353 17.0061 10.3511 16.3758C10.349 15.6764 10.5953 14.7293 10.9379 14.1195C11.2466 13.57 11.6508 13.1658 12.4592 12.3574L12.6998 12.1168C13.5109 11.3056 13.9165 10.9 14.3521 10.6797C15.2184 10.2415 16.2415 10.2415 17.1078 10.6797C17.5434 10.9 17.949 11.3056 18.7602 12.1168L19.0576 12.4142C19.5912 12.9479 19.858 13.2147 20.0325 13.483C20.6903 14.4948 20.6903 15.7992 20.0325 16.811C19.858 17.0793 19.5912 17.3461 19.0576 17.8797C18.8831 18.0542 18.7959 18.1415 18.7229 18.2434C18.4634 18.6058 18.3738 19.1313 18.4985 19.5592C18.5336 19.6797 18.5793 19.7748 18.6707 19.9651Z"
                     fill="#05664F" stroke="#" stroke-width="2.31303" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                + 996 500 202 404
+                +48732789098
               </a>
-              <a class="footer__contacts-link footer__contacts-link--email" href="mailto:admin@gmail.com">
+              <a class="footer__contacts-link footer__contacts-link--email" href="mailto:nazira@career-box.com">
                 <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="49.1011" height="49.1011" rx="7" fill="#FFFFFF" />
                   <path
@@ -295,7 +301,7 @@
                     d="M9.54639 17.0482L21.7973 25.6239C22.7894 26.3183 23.2854 26.6655 23.825 26.8C24.3015 26.9188 24.8 26.9188 25.2766 26.8C25.8161 26.6655 26.3122 26.3183 27.3042 25.6239L39.5552 17.0482M16.7485 36.5539H32.3531C34.874 36.5539 36.1345 36.5539 37.0974 36.0633C37.9444 35.6317 38.633 34.9431 39.0646 34.0961C39.5552 33.1332 39.5552 31.8728 39.5552 29.3518V19.749C39.5552 17.228 39.5552 15.9675 39.0646 15.0046C38.633 14.1577 37.9444 13.469 37.0974 13.0375C36.1345 12.5469 34.874 12.5469 32.3531 12.5469H16.7485C14.2275 12.5469 12.967 12.5469 12.0041 13.0375C11.1572 13.469 10.4686 14.1577 10.037 15.0046C9.54639 15.9675 9.54639 17.228 9.54639 19.749V29.3518C9.54639 31.8728 9.54639 33.1332 10.037 34.0961C10.4686 34.9431 11.1572 35.6317 12.0041 36.0633C12.967 36.5539 14.2275 36.5539 16.7485 36.5539Z"
                     stroke="#FFFFFF" stroke-width="2.70447" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                admin@gmail.com
+                nazira@career-box.com
               </a>
             </div>
             <div class="footer__social">
@@ -303,17 +309,18 @@
                 We are in social networks
               </p>
               <nav class="footer__social-wrapper">
-                <a class="footer__social-links" href="">
-                  <img src="./assets/images/instagram.svg" alt="">
+                <a class="footer__social-links" target="_blank" href="https://www.instagram.com/career.box/">
+                  <img src="./assets/images/instagram.svg" alt="Instagram">
                 </a>
-                <a class="footer__social-links" href="">
-                  <img src="./assets/images/telegram.svg" alt="">
+                <a class="footer__social-links" target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100092540211702&mibextid=LQQJ4d">
+                  <img src="./assets/images/facebook.svg" alt="Facebook">
                 </a>
-                <a class="footer__social-links" href="">
-                  <img src="./assets/images/Linkedin.svg" alt="">
+                <a class="footer__social-links" target="_blank" href="https://www.linkedin.com/company/careerbox1/">
+                  <img src="./assets/images/Linkedin.svg" alt="Linkedin">
                 </a>
-                <a class="footer__social-links" href="">
-                  <img src="./assets/images/instagram.svg" alt="">
+                <a class="footer__social-links" target="_blank" href="https://twitter.com/Career_Boxx">
+                  <img src="./assets/images/twitter.svg" alt="Twitter">
                 </a>
               </nav>
             </div>
@@ -325,11 +332,13 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      const body = document.querySelector('#body');
       const burgerBtn = document.querySelector('.header__burger-btn');
       const burgerMenu = document.querySelector('.mob-menu');
       const menuLinks = document.querySelectorAll('.mob-menu__links');
       const footerLinks = document.querySelectorAll('.footer__links');
       const headerLinks = document.querySelectorAll('.header__link');
+
       function scrollToSection(targetSection, offset) {
         if (targetSection) {
           var targetPosition = targetSection.offsetTop;
@@ -339,15 +348,32 @@
           });
         }
       }
+
       burgerBtn.addEventListener('click', () => {
         if (burgerMenu.classList.contains('active')) {
           burgerMenu.classList.remove('active');
           burgerBtn.classList.remove('active');
+          body.classList.remove('lock');
         } else {
           burgerMenu.classList.add('active');
           burgerBtn.classList.add('active');
+          body.classList.add('lock');
         }
       });
+
+      // Проверяем ширину экрана при загрузке страницы и добавляем/убираем классы
+      function checkScreenWidth() {
+        if (window.innerWidth > 768) {
+          burgerMenu.classList.remove('active');
+          burgerBtn.classList.remove('active');
+          body.classList.remove('lock');
+        }
+      }
+
+      checkScreenWidth(); // Вызываем функцию при загрузке страницы
+
+      window.addEventListener('resize', checkScreenWidth); // Обрабатываем изменение размеров экрана
+
       menuLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
@@ -356,8 +382,10 @@
           scrollToSection(targetSection, -50);
           burgerMenu.classList.remove('active');
           burgerBtn.classList.remove('active');
+          body.classList.remove('lock'); // Убираем класс lock при клике на ссылку в меню
         });
       });
+
       footerLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
@@ -366,6 +394,7 @@
           scrollToSection(targetSection, -50);
         });
       });
+
       headerLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
@@ -375,6 +404,8 @@
         });
       });
     });
+
+
   </script>
 </body>
 
