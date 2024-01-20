@@ -60,10 +60,6 @@
   .partners__title {
     font-size: 90px;
   }
-
-  .footer__title {
-    font-size: 90px;
-  }
 }
 
 @media (max-width: 1440px) {
@@ -74,12 +70,6 @@
 
   .header__link {
     font-size: 16px;
-  }
-
-  .header__button {
-    width: 140px;
-    height: 44px;
-    font-size: 18px;
   }
 
   .hero {
@@ -217,30 +207,25 @@
     font-size: 80px;
   }
 
-  .footer {
-    padding: 60px 0 40px;
-  }
-
-  .footer .container {
-    column-gap: 50px;
-  }
-
   .footer__logo {
-    width: 20%;
+    max-width: 200px;
+    height: 130px;
   }
 
-  .footer__contact {
-    width: 50%;
+  .footer__links {
+    font-size: 20px;
   }
 
   .footer__title {
-    font-size: 80px;
-    margin-bottom: 30px;
+    font-size: 70px;
   }
 
-  .footer__title::before {
-    left: 15px;
-    width: 540px;
+  .footer__contacts-link {
+    font-size: 20px;
+  }
+
+  .footer__social-text {
+    font-size: 20px;
   }
 }
 
@@ -375,41 +360,6 @@
     width: 587px;
   }
 
-  .footer .container {
-    column-gap: 30px;
-  }
-
-  .footer__title {
-    font-size: 70px;
-    margin-bottom: 35px;
-    line-height: 100px;
-  }
-
-  .footer__title::before {
-    left: 10px;
-    width: 520px;
-  }
-
-  .footer__contact {
-    width: 56%;
-  }
-
-  .footer__contact-items {
-    column-gap: 30px;
-  }
-
-  .footer__contact-item {
-    margin-bottom: 20px;
-  }
-
-  .footer__contact-desc {
-    font-size: 20px;
-  }
-
-  .footer__contact-desc {
-    font-size: 20px;
-  }
-
   .social__link {
     margin-right: 25px;
   }
@@ -453,6 +403,11 @@
 
   .countries__list {
     bottom: -50px;
+  }
+
+  .header__button {
+    padding: 8px 20px;
+    font-size: 16px;
   }
 }
 
@@ -724,27 +679,22 @@
     order: -1;
   }
 
-  .footer .container {
-    column-gap: 45px;
-    flex-wrap: wrap;
-    row-gap: 54px;
+  .social__link {
+    margin-right: 30px;
   }
 
-  .footer__logo {
-    width: 47%;
+  .footer__title {
+    text-align: center;
+    font-size: 50px;
   }
 
-  .footer__contact {
+  .footer__title::after {
     width: 100%;
   }
 
-  .footer__contact-desc {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .social__link {
-    margin-right: 30px;
+  .footer__inner {
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -790,16 +740,18 @@
     line-height: 118px;
   }
 
-  .footer__title::before {
-    width: 395px;
-  }
-
-  .footer__contact-items {
-    grid-template-rows: repeat(4, 1fr);
-  }
-
   .countries__wrapper {
     height: 300px;
+  }
+
+  .footer__wrapper {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__links {
+    text-align: center;
   }
 }
 
@@ -957,19 +909,6 @@
     padding: 0;
     max-width: 365px;
     height: 245px;
-  }
-
-  .footer .container {
-    row-gap: 20px;
-  }
-
-  .footer__title {
-    font-size: 50px;
-    line-height: 61px;
-  }
-
-  .footer__title::before {
-    width: 285px;
   }
 
   .why__cards {
