@@ -53,12 +53,16 @@
 
   <section class="hero" id="hero">
     <div class="container">
+
       <div class="hero__video">
         <video autoplay loop muted poster="./assets/images/bg.jpg" preload="auto">
           <source src="./assets/videos/bg.mp4" type="video/mp4">
           Your browser doesn't support HTML5 video tag.
         </video>
       </div>
+
+      <img class="hero__placeholder" src="./assets/images/bg.jpg" alt="">
+
       <div class="hero__content">
         <h1 class="hero__title">CareerBox</h1>
         <h4 class="hero__desc">Powering Your Business Through Quality Staffing Solutions</h4>
@@ -433,39 +437,29 @@
         });
       });
     });
-
-
-
     const swiper = new Swiper('.swiper', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
-
       autoplay: {
         delay: 1000,
         disableOnInteraction: false,
       },
-
       slidesPerView: 4,
-
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
       },
-
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },
     });
-
-
   </script>
 </body>
 
