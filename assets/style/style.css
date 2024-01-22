@@ -203,10 +203,14 @@ footer {
   width: 100%;
   height: 65vh;
   transform: translateY(-150%);
-  transition: all .5s;
-  background: rgba(14, 35, 40);
+  background: rgba(14, 35, 40, .50);
   overflow-y: auto;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all .5s;
 }
+
 
 .mob-menu.active {
   transform: translateY(0);
@@ -279,6 +283,7 @@ footer {
   z-index: 30;
   background: rgba(0, 1, 1, 0.5);
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 .hero__content {
@@ -683,6 +688,7 @@ footer {
   height: 100%;
   fill: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(10.139504432678223px);
+  -webkit-backdrop-filter: blur(10.139504432678223px);
   z-index: -1;
   border-radius: 20px;
 }
@@ -690,7 +696,7 @@ footer {
 .why__items::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: -10px;
   bottom: -20px;
   width: 100%;
   height: 70%;
